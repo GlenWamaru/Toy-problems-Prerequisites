@@ -19,13 +19,13 @@ function calculateDemeritPoints(speed) {
     }
 }
 
-
+// Create an interface for reading from the command line
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-
+// Get user input for the car's speed
 rl.question('Enter the car\'s speed (in km/h): ', (input) => {
     const speed = parseFloat(input);
 
